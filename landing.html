@@ -27,6 +27,10 @@
   <!-- Sign Up Section -->
   <section class="py-5 bg-light">
     <div class="container">
+      <div class="text-center mb-4">
+  <img src="images.png/logo pic.jpg" alt="MatchMyStyle Logo" style="width: 400px;">
+</div>
+
       <h2 class="text-center mb-4 fw-bold">Get Early Access</h2>
       <p class="text-center mb-5 text-muted">Sign up and be the first to receive updates and exclusive offers.</p>
       <div class="row justify-content-center">
@@ -62,5 +66,13 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Thank you for signing up! We’ll send you the good stuff.");
+    this.reset();
+  });
+</script>
+
 </body>
 </html>
